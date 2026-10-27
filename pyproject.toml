@@ -1,0 +1,31 @@
+[project]
+name = "vision-transformer-from-scratch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdulrahman Alramali", email = "76879116+AbduAlramali@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.14.1",
+    "torchvision>=0.29.1",
+]
+
+[project.scripts]
+vision-transformer-from-scratch = "vision_transformer_from_scratch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu132"
+default = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+
+[tool.uv]
+package = false
