@@ -5,8 +5,8 @@ from typing import Literal
 @dataclass(frozen=True)
 class ViTConfig:
     # Input and patch embedding
-    image_size: int | tuple[int, int] = 224
-    patch_size: int | tuple[int, int] = 16
+    image_size: int = 224
+    patch_size: int = 16
     in_channels: int = 3
 
     # Transformer architecture
@@ -27,7 +27,6 @@ class ViTConfig:
 
     # Task
     num_classes: int = 10
-    epochs: int = 10
 
     @staticmethod
     def _to_pair(

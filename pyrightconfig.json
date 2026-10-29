@@ -1,0 +1,13 @@
+{
+  "include": ["src", "tests", "scripts", "experiments", "configs"],
+  "exclude": ["**/__pycache__", ".venv", "build", "dist", "uv.lock"],
+  "venvPath": ".",
+  "venv": ".venv",
+  "extraPaths": ["src"],
+  "pythonVersion": "3.12",
+  "pythonPlatform": "Linux",
+  "typeCheckingMode": "basic",
+  "useLibraryCodeForTypes": true,
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": false
+}

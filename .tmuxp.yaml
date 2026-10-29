@@ -1,0 +1,35 @@
+session_name: '0'
+windows:
+- layout: b37d,140x42,0,0,0
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /home/perseus/learn/deep-learning/vision-transformer-from-scratch
+  window_name: editor
+- layout: b37e,140x42,0,0,1
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/perseus/nix-config
+  window_name: home-nix
+- focus: 'true'
+  layout: b37f,140x42,0,0,2
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: python3.14
+  start_directory: /home/perseus/learn/deep-learning/vision-transformer-from-scratch
+  window_name: terminal
+- layout: b380,140x42,0,0,3
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: opencode
+  start_directory: /home/perseus/nix-config
+  window_name: agent
